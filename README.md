@@ -19,16 +19,15 @@ The `tracker` folder, inside `src` is structured as follows:
 
 ## Running the code
 
-The code for the tracker is hosted on Google Drive so that it can be installed remotelly and seamlessly. It can be accessed through the following link (if you want to visit it. You dont have to do anything with it. The process does the setup for you):
-
-https://drive.google.com/drive/folders/1R0xgOiVEpf8_EwviQ72NZ2_9b_2wCcYj?usp=share_link
-
-
-Furthermore, due to performance reasons, the notebook that executes the trackers is in Kaggle:
+For performance reasons, the notebook that executes the trackers is in Kaggle:
 
 https://www.kaggle.com/code/hector6298/appsiv-p2-mot-tracking
 
 
-To get a copy of the environment you just have to **visit the Kaggle link**, then click on the **"Copy \& Edit"** button in the upper right corner of the web application. 
+To get a copy of the environment you have to do the following steps:
 
-It already has setup steps prepared for testing. After the notebook is copied in you own workspace, you can just hit **"Run All"**. Moreover the tester **must have a verified account** to have access to the data and execute using GPU accelerators. If you are not verified (via cellphone, for instance) you may have errors running the notebook. Once the account is created and verified, running the notebook using NVIDIA P100 GPU takes approximately 1 hour and 40 minutes.
+1. **Visit the Kaggle link**
+2. Click on the **"Copy \& Edit"** button in the upper right corner of the web application. 
+3. It already has setup steps prepared for testing.
+4. The tester **must have a verified account** to have access to the data and execute using GPU accelerators. If you are not verified (via cellphone, for instance) you may have errors running the notebook.
+5. Once the account is created and verified, click **Run All**. running the notebook using NVIDIA P100 GPU takes approximately 1 hour and 40 minutes.

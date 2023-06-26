@@ -1,6 +1,8 @@
 
 # DeepSuperTracker and other implementations for MOT testing
 
+## Description
+
 This repository holds four different implementations of Multi-Object Trackers. Each one is an incremental improvement of the previous one, named as follows:
 
 -  **Baseline IoU tracker**: Uses Faster-RCNN as object detector. Then those detections are compared against existing tracks in terms of Intersection over Union (IoU). The detection that maximizes the similarity for a certain track is assigned to that track.
@@ -18,13 +20,13 @@ The code in this folder is for the APPSIV practice. **The code here is just for 
 ## Outline of the repository
 
 The `tracker` folder, inside `src` is structured as follows:
-- tracker: contains the code for our tracking classes.
-    - abstract_tracker: Base class with boilerplate code for the custom trackers.
-    - iou_tracker: Contains two classes of trackers based only on IoU distance. One using np.nanargmin and the other using linear assignment to assign detections to trackers.
-    - deep_tracker: Contains two classes of trackers using IoU + CNN features. One using np.nanargmin and the other using linear assignment to assign detections to trackers.
-    - track: Contains two classes to represent a track.
-- detector: Code for object detection
-- featurizer: Object to generate feature vectors for the embeddings. However, it was not used, but the code might be updated in the future to use this object.
+- `tracker`: contains the code for our tracking classes.
+    - `abstract_tracker`: Base class with boilerplate code for the custom trackers.
+    - `iou_tracker`: Contains two classes of trackers based only on IoU distance. One using np.nanargmin and the other using linear assignment to assign detections to trackers.
+    - `deep_tracker`: Contains two classes of trackers using IoU + CNN features. One using np.nanargmin and the other using linear assignment to assign detections to trackers.
+    - `track`: Contains two classes to represent a track.
+- `detector`: Code for object detection
+- `featurizer`: Object to generate feature vectors for the embeddings. However, it was not used, but the code might be updated in the future to use this object.
 
 
 ## Running the code

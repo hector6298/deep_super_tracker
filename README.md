@@ -1,6 +1,14 @@
 
 # DeepSuperTracker and other implementations for MOT testing
 
+This repository holds four different implementations of Multi-Object Trackers. Each one is an incremental improvement of the previous one, named as follows:
+
+-  **Baseline IoU tracker**: Uses Faster-RCNN as object detector. Then those detections are compared against existing tracks in terms of Intersection over Union (IoU). The detection that maximizes the similarity for a certain track is assigned to that track.
+- Hungarian algorithm tracker: An improvement over the baseline that uses the linear assignment method (Hungarian algorithm) to match detections with tracks.
+- IoU + CNN features tracker: Uses a Deep Convolutional Neural Network (CNN) called EfficientNetV2, in the small version, to extract features for the image patches corresponding to the bounding boxes. Then a weighted sum between the cosine similarity and the IoU similarity is used to match detections to tracks.
+- CNN features + IoU + Hungarian algorithm tracker: Uses CNN features (cosine similarity) + IoU for the cost matrix. Then, the Hungarian algorithm is applied to assign detections.
+
+
 ## Getting started
 
 The code in this folder is for the APPSIV practice. **The code here is just for grading purposes**. If you want to execute all the trackers, read the section "Running the code" first.
